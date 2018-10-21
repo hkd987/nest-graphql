@@ -13,9 +13,9 @@ const server = new ApolloServer({
       ThermostatAPI: new ThermostatAPI()
     }
   },
-  context: () => {
+  context: ({ req }) => {
     return {
-
+      access_token: req.headers.access_token ? req.headers.access_token : null
     }
   }
 })

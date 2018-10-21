@@ -12,7 +12,7 @@ type thermostatSoftwareVersion {
 }
 
 type Query {
-  getThermostatId(id: String!, access_token: String!): thermostatId!
-  getThermostatLocale(id: String!, access_token: String!): thermostatLocale!
-  getThermostatSoftware(id: String, access_token: String!): thermostatSoftwareVersion!
+  getThermostatId(id: String!): thermostatId!
+  getThermostatLocale(id: String!): thermostatLocale!
+  getThermostatSoftware(id: String): thermostatSoftwareVersion!
 }
