@@ -1,0 +1,13 @@
+
+type thermostatId {
+  device_id: String!
+}
+
+type thermostatLocale {
+  locale: String!
+}
+
+type Query {
+  getThermostatId(id: String!, access_token: String!): thermostatId!
+  getThermostatLocale(id: String!, access_token: String!): thermostatLocale!
+}

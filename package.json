@@ -8,6 +8,7 @@
   },
   "author": "Lundin Matthews <lundinmatthews@me.com>",
   "dependencies": {
+    "apollo-datasource-rest": "^0.1.5",
     "apollo-server": "^2.1.0",
     "graphql": "^14.0.2",
     "merge-graphql-schemas": "^1.5.7"
