@@ -1,3 +1,10 @@
+type standardId {
+  error: String
+  type: String
+  message: String
+  instance: String
+  details: thermostatId!
+}
 
 type thermostatId {
   device_id: String!
@@ -12,7 +19,7 @@ type thermostatSoftwareVersion {
 }
 
 type Query {
-  getThermostatId(id: String!): thermostatId!
+  getThermostatId(id: String!): standardId!
   getThermostatLocale(id: String!): thermostatLocale!
   getThermostatSoftware(id: String): thermostatSoftwareVersion!
 }
