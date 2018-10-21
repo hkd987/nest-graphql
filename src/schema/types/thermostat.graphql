@@ -7,7 +7,12 @@ type thermostatLocale {
   locale: String!
 }
 
+type thermostatSoftwareVersion {
+  software_version: String!
+}
+
 type Query {
   getThermostatId(id: String!, access_token: String!): thermostatId!
   getThermostatLocale(id: String!, access_token: String!): thermostatLocale!
+  getThermostatSoftware(id: String, access_token: String!): thermostatSoftwareVersion!
 }
