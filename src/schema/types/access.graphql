@@ -1,0 +1,8 @@
+type accessToken {
+  access_token: String!
+  expires_in: Int!
+}
+
+type Query {
+  needAccess(clientId: String!, clientSecret: String!, code: String!, grantType: String!): accessToken!
+}

@@ -7,7 +7,7 @@ export class ThermostatAPI extends RESTDataSource {
   }
 
   willSendRequest (request) {
-    request.headers.set('access_token', this.context.access_token)
+    request.headers.set('Authorization', `${this.context.access_token}`)
   }
 
   async getThermostatId (id) {
